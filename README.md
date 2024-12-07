@@ -12,6 +12,14 @@ clash 自定义规则
   - [https://raw.githubusercontent.com/VelvetCodeLoom/clash-rules/release/chatgpt.txt](https://raw.githubusercontent.com/VelvetCodeLoom/clash-rules/release/chatgpt.txt)
   - [https://cdn.jsdelivr.net/gh/VelvetCodeLoom/clash-rules@release/chatgpt.txt](https://cdn.jsdelivr.net/gh/VelvetCodeLoom/clash-rules@release/chatgpt.txt)
 
+### cdn.jsdelivr.net 无法刷新缓存解决方法
+
+- 将 cdn.jsdelivr.net中的cdn改为 purge
+- git bash中执行
+  `curl https://purge.jsdelivr.net/gh/username/reponame@latest/file.*** `
+- 浏览器直接访问
+  `https://purge.jsdelivr.net/gh/snapei/clash-pro-rules@release/xxx.txt`
+
 ### 使用方式
 
 要想使用本项目的规则集，只需要在 Clash 配置文件中添加如下 `rule-providers` 和 `rules`。
